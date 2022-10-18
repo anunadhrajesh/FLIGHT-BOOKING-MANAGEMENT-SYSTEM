@@ -88,7 +88,7 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit"value="Show Data" onclick="javaScript:showData();">
+            <td><input type="submit" value="Show Data" onclick="javaScript:showData();">
             <input type="reset" value="Reset"></td>
         </tr>   
                    
@@ -99,13 +99,14 @@
     <br>
     <br>
     <script>
-        function saveData(){
+        function showData(){
             var firstName = document.getElementById("firstName").value;
             var lastName = document.getElementById("lastName").value;
             var address = document.getElementById("address").value;
             localStorage.setItem("firstName",firstName);
             localStorage.setItem("lastName",lastName);
             localStorage.setItem("address",address); 
+            return false;
         }
     </script>
 </body>

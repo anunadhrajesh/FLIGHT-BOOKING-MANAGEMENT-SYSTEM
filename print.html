@@ -1,13 +1,20 @@
 <html>
-    <tirle>
+    <title>
         PRINT
     </title>
     <body>
         Submittted Details:
         <input type="button" name="btnShow" value="Show Data" onclick="javascript:showData();"/>
-        First Name:<span id="lblFirstName"></span>
+        <br>
+        First Name:<span id="firstName"></span>
+        <br>
+        Last Name:<span id="lastName"></span>
+        <br>
 
-        Welcome <span is="fullName"></span> ! Your address is <span id="address"></span>
+
+        Welcome :<span id="fullName"></span>
+        <br>
+        Your address is :<span id="address"></span>
 
         <script>
             function showData(){
@@ -15,9 +22,10 @@
                 var firstName = localStorage.getItem("firstName");
                 var lastName = localStorage.getItem("lastName");
                 var address = localStorage.getItem("address");
-                document.getElementById("fullName").innerHTML= firstName+lastName;
+                document.getElementById("fullName").innerHTML= firstName + lastName;
                 document.getElementById("address").innerHTML= address;
-                document.getElementById("lblFirstName").innerHTML= firstName;
+                document.getElementById("firstName").innerHTML= firstName;
+                document.getElementById("lastName").innerHTML= lastName;
             }
         </script>
     </body>
