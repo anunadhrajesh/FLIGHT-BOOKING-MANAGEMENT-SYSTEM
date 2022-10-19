@@ -4,19 +4,38 @@
             BOOKING PAGE
         </title>
         <style>
+
+             .tab1{
+                border: 6px solid black;
+            }
+
+            .tab2{
+                border: 6px solid black;
+            }
+
             body {
+      font-family: cursive; color: white;
       background-image: url('b.jpg');
     }
     
         </style>
     </head>
     <body>
+
+        <!--<video width="100%" height="100%" controls autoplay muted loop style="object-fit: cover; position:absolute;">
+            
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+        -->
        
 
         <h2 align="left"><button><a href="index.html" target="_blank">HOME</a></button></center>
     </h2>
     <center><h1 style="color:white;">SEARCH FOR FLIGHTS</h1></center>
-    <form action="">
+
+<!--SEARCH-->
+
+    <form action="" class="tab2">
         <center><label for="" style="color:white;">LOCATION:</label></center>
         <center><input type="text" id="" name=""></center>
         <center><label for=""style="color:white;" >DESTINATION:</label></center>
@@ -24,57 +43,113 @@
         <center><button style="font-family: cursive; color: black;" >SUBMIT</button></center>
       </form>
 
+    <!--<center><table>
+        <tr>
+            <td>
+      <video width="320" height="240" controls autoplay muted>
+        
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/mp4">
+        Your Browser does not support video tag.
+      </video>
+    </td>
+    <tr>
+    </table></center>-->
+
+      <!--BOOKING-->
+
       <form action="print.html" method="get">
-        <table align="center">
+        <table align="center" class="tab1">
+            <tr>
+                <td colspan="2">
+          <video width="320" height="240" controls autoplay muted>
+            
+            <source src="video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/mp4">
+            Your Browser does not support video tag.
+          </video>
+        </td>
+            </tr>
+        <tr>
+        <td colspan="2">
+            <audio controls autoplay>
+                <source src="audio.ogg" type="audio/ogg">
+                <source src="audio.mp3" type="audio/ogg">
+                Your browser does not support audio content
+            </audio>
+        </td>
+        <tr>
+
+
+            <tr>
+                <td>
+                    <label for="title">Title</label>
+                </td>
+                <td>
+                    <select id="title" name="title">
+                        <option value="1" selected>Mr.</option>
+                        <option value="2">Mrs.</option>
+                        <option value="3">Ms.</option>
+                    </select>
+                </td>
+            </tr>
         <tr>
             <td><label for="firstName">First name :</label></td>
-            <td><input type="text" id="firstName" name="firstName" placeholder="Your first name"></td><br><br>
+            <td><input type="text" id="firstName" name="firstName" placeholder="Your first name" style="border-color:black ;"></td><br><br>
         </tr>                
         <tr>
             <td><label for="lastName">Last name :</label></td>
-            <td><input type="text" id="lastName" name="lastName" placeholder="Your last name"></td><br><br>
+            <td><input type="text" id="lastName" name="lastName" placeholder="Your last name" style="border-color:black ;"></td><br><br>
         </tr>
         <tr>
             <td><label for="address">Address :</label></td>
-            <td><textarea id="address" placeholder="Address" rows="6" cols="20"></textarea></td>
+            <td><textarea id="address" placeholder="Address" rows="6" cols="20" style="border-color:black ;"></textarea></td>
         </tr> 
         <tr>
             <td><label for="mno">Mobile :</label></td>
-            <td><input type="text" id="mno" name="mno" placeholder="Mobile Number"></td><br><br>
+            <td><input type="text" id="mno" name="mno" placeholder="Mobile Number" style="border-color:black ;"></td><br><br>
         </tr>                
         <tr>
             <td><label for="email">Email :</label></td>
-            <td><input type="text" id="email" name="email" placeholder="Your Email Id"></td><br><br>
+            <td><input type="text" id="email" name="email" placeholder="Your Email Id" style="border-color:black ;"></td><br><br>
         </tr>
         <tr>
             <td><label for="username">Username :</label></td>
-            <td><input type="text" id="username" name="username" placeholder="Username"></td><br><br>
+            <td><input type="text" id="username" name="username" placeholder="Username" style="border-color:black ;"></td><br><br>
         </tr>                
         <tr>
             <td><label for="password">Password :</label></td>
-            <td><input type="password" id="password" name="Password" placeholder="Password"></td><br><br>
+            <td><input type="password" id="password" name="Password" placeholder="Password" style="border-color:black ;"></td><br><br>
         </tr>
         <tr>
             <td><label for="dob">Date of Birth :</label></td>
-            <td><input type="date" id="dob" name="dob"  ></td><br><br>
+            <td><input type="date" id="dob" name="dob" style="border-color:black ;" ></td><br><br>
         </tr>
         <tr>
             <td><label for="gender">Gender :</label></td>
-            <td><input type="radio" id="male" name="gender" value="1">Male</td>
-            <td><input type="radio" id="female" name="gender" value="2">Female</td>
+            <td><input type="radio" id="male" name="gender" value="1" style="border-color:black ;">Male</td>
+            <td><input type="radio" id="female" name="gender" value="2" style="border-color:black ;">Female</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="photo"></label>
+            </td>
+            <td>
+                <input type="file" id="photoFile" name="photoFile" accept="image/*,*.pdf" style="border-color:black ;"/>
+            </td>
         </tr>
         <tr>
             <td><label for="yesno">Can we contact you ?</label></td>
-            <td><input type="radio" id="male" name="yesno" value="1">Yes</td>
-            <td><input type="radio" id="female" name="yesno" value="2">No</td>
+            <td><input type="radio" id="male" name="yesno" value="1" style="border-color:black ;">Yes</td>
+            <td><input type="radio" id="female" name="yesno" value="2" style="border-color:black ;">No</td>
         </tr>
         <tr>
             <td>
                 <label for ="preference">Communication Preference</label>
             </td>
             <td>
-                <input type="checkbox" name="email" id="email">Email
-                <input type="checkbox" name="email" id="email">SMS
+                <input type="checkbox" name="email" id="email" style="border-color:black ;">Email
+                <input type="checkbox" name="email" id="email" style="border-color:black ;">SMS
 
             </td>
 
